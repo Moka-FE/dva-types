@@ -1,21 +1,24 @@
 import { ModelAction, Commands, ModelState } from '../src';
 
-declare function fetchTodos(): Promise<TodoModelState['todos']>;
+declare function fetchTodos(): Promise<Todo[]>;
+
+type Todo = {
+  id?: number;
+  summary: string;
+  createDate: Date;
+  status: 'todo' | 'doing' | 'done';
+};
 
 type TodoModel = {
   namespace: 'todo';
 
   state: {
-    todos: {
-      summary: string;
-      createDate: Date;
-      status: 'todo' | 'doing' | 'done';
-    }[];
+    todos: Todo[];
   };
 
   reducers: {
-    set(state: TodoModelState, action: { payload: TodoModelState['todos'] }): TodoModelState;
-    add(state: TodoModelState, action: { payload: TodoModelState['todos'][0] }): TodoModelState;
+    set(state: TodoState, action: { payload: Todo[] }): TodoState;
+    add(state: TodoState, action: { payload: Todo }): TodoState;
   };
 
   effects: {
@@ -23,9 +26,9 @@ type TodoModel = {
   };
 };
 
-type TodoModelState = ModelState<TodoModel>;
+type TodoState = ModelState<TodoModel>;
 
-type TodoModelAction = ModelAction<TodoModel>;
+type TodoAction = ModelAction<TodoModel>;
 
 
 const todoModel: TodoModel = {

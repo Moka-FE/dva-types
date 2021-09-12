@@ -1,6 +1,6 @@
 {
   "name": "@moka-fe/dva-types",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of Dva types",
   "keywords": [
     "typescript",
@@ -27,6 +27,6 @@
     "tsd": "^0.17.0"
   },
   "tsd": {
-		"directory": "test-d"
-	}
+    "directory": "test-d"
+  }
 }

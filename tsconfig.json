@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "outDir": "dist/"
-  }
+    "lib": ["DOM", "ESNext"],
+    "target": "ES5"
+  },
+  "exclude": [
+		"test-d/**/*"
+	]
 }

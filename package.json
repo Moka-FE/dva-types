@@ -1,0 +1,18 @@
+{
+  "name": "@moka-fe/dva-types",
+  "version": "0.0.1",
+  "description": "A collection of Dva types",
+  "types": "./index.d.ts",
+  "files" :[
+    "index.d.ts",
+    "src"
+  ],
+  "scripts": {
+    "release": "standard-version"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "standard-version": "^9.3.1"
+  }
+}

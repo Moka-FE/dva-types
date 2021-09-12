@@ -2,7 +2,7 @@
 
 Dva 扩展类型
 
-源自(迁移 Dva 项目到 typescript 有感)[https://blog.lishunyang.com/2021/04/migrate-dva-to-ts.html]
+源自[迁移 Dva 项目到 typescript 有感](https://blog.lishunyang.com/2021/04/migrate-dva-to-ts.html)
 
 # 用法
 

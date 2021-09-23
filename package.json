@@ -8,6 +8,7 @@
     "types",
     "utility"
   ],
+  "repository": "https://github.com/Moka-FE/dva-types",
   "engines": {
     "node": ">=12.20"
   },
@@ -20,7 +21,7 @@
     "test": "tsd && tsc",
     "release": "standard-version"
   },
-  "author": "",
+  "author": "Listen Young",
   "license": "MIT",
   "devDependencies": {
     "standard-version": "^9.3.1",

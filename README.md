@@ -4,6 +4,12 @@ Dva 扩展类型
 
 源自[迁移 Dva 项目到 typescript 有感](https://blog.lishunyang.com/2021/04/migrate-dva-to-ts.html)
 
+[![npm (scoped with tag)](https://img.shields.io/npm/v/@moka-fe/dva-types/latest)](https://www.npmjs.com/package/@moka-fe/dva-types)
+![GitHub](https://img.shields.io/github/license/moka-fe/dva-types)
+![npm](https://img.shields.io/npm/dm/@moka-fe/dva-types)
+![Dependent repos (via libraries.io), scoped npm package](https://img.shields.io/librariesio/dependent-repos/npm/@moka-fe/dva-types)
+![GitHub forks](https://img.shields.io/github/forks/moka-fe/dva-types?style=social)
+
 # 用法
 
 ## 1. 安装依赖

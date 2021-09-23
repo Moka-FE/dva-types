@@ -1,12 +1,12 @@
 /**
  * 获取函数第一个参数的payload类型
  */
-export type FirstPayload<F> = F extends (first: infer S, second: any) => any ? S extends never ? never : S extends { payload: any } ? S['payload'] : never : never;
+export type FirstPayload<F> = F extends (first: infer S, second: never) => any ? S extends never ? 1 : S extends { payload: any } ? S['payload'] : never : never;
 
 /**
 * 获取函数第二个参数的payload类型
 */
-export type SecondPayload<F> = F extends (first: any, second: infer S) => any ? S extends never ? never : S extends { payload: any } ? S['payload'] : never : never;
+export type SecondPayload<F> = F extends (first: never, second: infer S) => any ? S extends never ? never : S extends { payload: any } ? S['payload'] : never : never;
 
 /**
 * 获取函数的参数类型

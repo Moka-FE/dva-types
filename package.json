@@ -1,6 +1,6 @@
 {
   "name": "@moka-fe/dva-types",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A collection of Dva types",
   "keywords": [
     "typescript",
